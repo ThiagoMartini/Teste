@@ -1,8 +1,9 @@
 import os
-from Flask import Flask, jsonify, request
+from flask import Flask, jsonify, request
 from math import sqrt
 
-app = Flask (__name__)
+app = Flask(__name__)
+
 @app.route('/')
 
 def primos():
@@ -17,8 +18,8 @@ def primos():
     return primo
 
 
-if __name__=='__main__':
-    port - int(os.environ.get('PORT', 5000))
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port)
 
 
